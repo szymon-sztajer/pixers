@@ -1,0 +1,7 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div id="form_container" class="container-fluid">
+        {{ include('@App/Default/contact_ajax.html.twig', { 'form': form }) }}
+    </div>
+{% endblock %}

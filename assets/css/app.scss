@@ -1,0 +1,30 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+// $fa-font-path: "~font-awesome/fonts";
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body{
+  //background-image: linear-gradient(#a1ffce, #faffd1);
+  background: -webkit-gradient(linear, left top, right bottom, from(#a1ffce), to(#faffd1)) fixed;
+}
+
+#box{
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+  background: rgba(250, 250, 200, 0.9);
+  border-radius: 4px;
+  top: 50px;
+  padding-bottom: 15px;
+}
+
+hr {
+  border-top: 1px solid #c8c8c8;
+}
+
+.validation-error {
+    color: red;
+}
+button { 
+    margin-left: 10px;
+}
