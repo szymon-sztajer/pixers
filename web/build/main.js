@@ -118,7 +118,6 @@ $(function () {
 				var data = new FormData(form);
 
 				xhr.onreadystatechange = function () {
-					console.log(this.readyState);
 					if (this.readyState == 4 && this.status == 200) {
 						var cont = document.getElementById('form_container');
 						cont.innerHTML = this.responseText;

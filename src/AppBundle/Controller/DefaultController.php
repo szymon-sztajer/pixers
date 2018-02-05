@@ -59,10 +59,10 @@ class DefaultController extends Controller
 	{
 		$mailer = $this->container->get('mailer');
 		$message = (new \Swift_Message($mailData['subject'] ?? 'Contact form message'))
-			->setFrom($mailData['email'])
-			->setTo($this->container->getParameter('recipients_mail'))
+			->setFrom($mailData['email'] ?? '')
+			->setTo($this->container->getParameter('recipients_email'))
 			->setBody(
-				$mailData['message'],
+				$mailData['message'] ?? '',
 				'text/plain'
 			);
 
